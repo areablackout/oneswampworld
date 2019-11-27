@@ -45,7 +45,18 @@ L.tileLayer('http://tiles.mapc.org/trailmap-onroad/{z}/{x}/{y}.png',
     // add GeoJSON layer to the map once the file is loaded
     L.geoJson(data).addTo(map);
   });
- 
+ $.getJSON("rodents.geojson",function(data){
+    var ratIcon = L.icon({
+    iconUrl: 'rat.gif',
+    iconSize: [50,40]
+  }); 
+  L.geoJson(data  ,{
+    pointToLayer: function(feature,latlng){
+	  return L.marker(latlng,{icon: ratIcon});
+    }
+  }  ).addTo(map);
+});
+  
 
   </script>
 </body>
