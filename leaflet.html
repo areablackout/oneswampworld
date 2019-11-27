@@ -39,7 +39,7 @@
           crs: crs
         });
         
-        layer = L.tileLayer('{z}/{x}/{y}.png', {
+        layer = L.tileLayer('tiles/{z}/{x}/{y}.png', {
           minZoom: mapMinZoom, maxZoom: mapMaxZoom,
           attribution: 'Rendered with <a href="https://www.maptiler.com/desktop/">MapTiler Desktop</a>',
           noWrap: true,
