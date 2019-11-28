@@ -99,8 +99,8 @@
 	 */
 
 	L.TileLayer.Provider.providers = {
-		OpenStreetMap: {
-			url: '//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+		SwampTiles: {
+			url: 'tiles/{z}/{x}/{y}.png',
 			options: {
 				maxZoom: 19,
 				attribution:
