@@ -18,7 +18,7 @@
     <div id="map"></div>
     <input id="slider" type="range" min="0" max="1" step="0.1" value="1" oninput="layer.setOpacity(this.value)">
     <script type="text/javascript">
-      var mapExtent = [0.00000000, -2823.00000000, 4446.00000000, 0.00000000];
+      var mapExtent = [0.00000000, 2823.00000000, 4446.00000000, 0.00000000];
       var mapMinZoom = 0;
       var mapMaxZoom = 5;
       var mapMaxResolution = 1.00000000;
@@ -51,7 +51,7 @@
       ]);
       L.control.mousePosition().addTo(map)
 
-      var marker = L.marker([-1200,-700]).addTo(map);
+      var marker = L.marker([1200,700]).addTo(map);
 
     </script>
   </body>
