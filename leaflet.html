@@ -50,7 +50,9 @@
         crs.unproject(L.point(mapExtent[0], mapExtent[1]))
       ]);
       L.control.mousePosition().addTo(map)
- 
+
+      var marker = L.marker([2200, 1200]).addTo(map);
+
     </script>
   </body>
 </html>
