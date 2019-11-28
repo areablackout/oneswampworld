@@ -50,6 +50,14 @@
         crs.unproject(L.point(mapExtent[0], mapExtent[1]))
       ]);
       L.control.mousePosition().addTo(map)
+      
+      // Create the Leaflet map with a generic start point
+    var map = L.map('map', {
+      center: [0, 0],
+      zoom: 1,
+      scrollWheelZoom: false,
+      zoomControl: false
+    });
     </script>
   </body>
 </html>
