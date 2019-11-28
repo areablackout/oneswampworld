@@ -4,7 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no"/>
-  <title>Leaflet Storymaps with Google Sheets Template</title>
+  <title>One Swamp World v0.1</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.js"></script>
@@ -21,14 +21,25 @@
 </head>
 
 <body>
-
-  <div id="title"></div>
+<div id="title"></div>
 
   <div id="narration">
     <div id="contents">
       <div id="top"></div>
     </div>
   </div>
+
+  <div class="loader">Loading...</div>
+  <div id="map"></div>
+
+  <script type="text/javascript">
+    // Create the Leaflet map with a generic start point
+    var map = L.map('map', {
+      center: [0, 0],
+      zoom: 1,
+      scrollWheelZoom: false,
+      zoomControl: false
+    });
  <div id="map"></div>
     <input id="slider" type="range" min="0" max="1" step="0.1" value="1" oninput="layer.setOpacity(this.value)">
     <script type="text/javascript">
