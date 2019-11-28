@@ -23,7 +23,7 @@
       var mapMaxZoom = 5;
       var mapMaxResolution = 1.00000000;
       var mapMinResolution = Math.pow(2, mapMaxZoom) * mapMaxResolution;
-      var tileExtent = [0.00000000, -2823.00000000, 4446.00000000, 0.00000000];
+      var tileExtent = [0.00000000, 2823.00000000, 4446.00000000, 0.00000000];
       var crs = L.CRS.Simple;
       crs.transformation = new L.Transformation(1, -tileExtent[0], -1, tileExtent[3]);
       crs.scale = function(zoom) {
