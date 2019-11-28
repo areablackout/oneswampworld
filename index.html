@@ -30,9 +30,6 @@
     </div>
   </div>
 
-  <div class="loader">Loading...</div>
-  <div id="map"></div>
-
   <div id="map"></div>
     <input id="slider" type="range" min="0" max="1" step="0.1" value="1" oninput="layer.setOpacity(this.value)">
     <script type="text/javascript">
@@ -68,6 +65,14 @@
         crs.unproject(L.point(mapExtent[0], mapExtent[1]))
       ]);
       L.control.mousePosition().addTo(map)
+    });
+      
+           // Create the Leaflet map with a generic start point
+    var map = L.map('map', {
+      center: [0, 0],
+      zoom: 1,
+      scrollWheelZoom: false,
+      zoomControl: false
     });
   </script>
 
